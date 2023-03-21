@@ -8,16 +8,15 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
 # production
 /build
 
 # misc
 .DS_Store
 *.pem
+.env
+.env.*
+!.env.example
 
 # debug
 npm-debug.log*
@@ -32,3 +31,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# sveltekit
+/.svelte-kit
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
