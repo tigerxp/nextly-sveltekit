@@ -8,3 +8,9 @@
     @apply dark:bg-trueGray-900;
   }
 }
+
+@layer components {
+  .navbar-close {
+    @apply hidden;
+  }
+}
