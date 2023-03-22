@@ -25,7 +25,7 @@
   ];
 </script>
 
-<Container className="!p-0">
+<Container class="!p-0">
   <div class="w-full max-w-2xl p-2 mx-auto rounded-2xl">
     {#each faqdata as item}
       <div key={item.question} class="mb-5">
@@ -38,7 +38,7 @@
               class="{item.open ? 'transform rotate-180' : ''} w-5 h-5 text-indigo-500"
             />
           </DisclosureButton>
-          <DisclosurePanel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
+          <DisclosurePanel class="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
             {item.answer}
           </DisclosurePanel>
         </Disclosure>

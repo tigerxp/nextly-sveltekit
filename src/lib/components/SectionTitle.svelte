@@ -3,7 +3,7 @@
 
   export let title;
   export let pretitle;
-  export let align;
+  export let align = 'center';
 </script>
 
 <Container

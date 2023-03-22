@@ -3,7 +3,7 @@
   import Benefit from './Benefit.svelte';
   import Image from './Image.svelte';
 
-  export let imgPos;
+  export let imgPos = 'left';
   export let data;
 </script>
 

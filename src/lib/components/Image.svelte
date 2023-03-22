@@ -1,7 +1,7 @@
 <script>
   export let src;
-  export let title;
-  export let alt;
+  export let title = '';
+  export let alt = '';
   export let width;
   export let height;
   // TODO: implement this functionality
