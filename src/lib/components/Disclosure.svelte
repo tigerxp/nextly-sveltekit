@@ -11,7 +11,7 @@
     on:click={() => (open = !open)}
   >
     <span>{title}</span>
-    <ChevronUpIcon class="{open ? 'transform rotate-180' : ''} w-5 h-5 text-indigo-500" />
+    <ChevronUpIcon class="{open ? '' : 'transform rotate-180'} w-5 h-5 text-indigo-500" />
   </button>
   <div class="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300" class:hidden={!open}>
     <slot />
