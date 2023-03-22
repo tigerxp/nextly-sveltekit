@@ -1,7 +1,7 @@
 <script>
   import ThemeChanger from './ThemeChanger.svelte';
-  // import Disclosure from './Disclosure.svelte';
   export let title = 'Nextly';
+  let open = false;
 
   const navigation = ['Product', 'Features', 'Pricing', 'Company', 'Blog'];
 </script>
@@ -9,6 +9,7 @@
 <div class="w-full">
   <nav
     class="container navbar relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0"
+    class:navbar-open={open}
   >
     <div class="flex flex-wrap items-center justify-between w-full lg:w-auto">
       <a
@@ -17,20 +18,33 @@
         ><span><img src="/img/logo.svg" alt="N" width="32" height="32" class="w-8" /></span><span
           >{title}</span
         ></a
-      ><button
+      >
+      <button
         aria-label="Toggle Menu"
         class="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
-        id="headlessui-disclosure-button-1"
         type="button"
-        ><svg class="navbar-hamburger w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+        on:click={() => (open = !open)}
+      >
+        <svg
+          class="navbar-hamburger w-6 h-6 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
           ><path
             fill-rule="evenodd"
             d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+          />
+        </svg>
+        <svg
+          class="navbar-close w-6 h-6 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          ><path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
           /></svg
         >
-        <svg class="navbar-close w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"></path></svg>
-        </button
-      >
+      </button>
     </div>
     <div class="navbar-items hidden text-center lg:flex lg:items-center">
       <ul class="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
