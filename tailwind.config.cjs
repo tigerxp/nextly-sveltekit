@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        trueGray: colors.trueGray
+        trueGray: colors.neutral
       },
       screens: {
         'maxlg': {'max': '1023px'},
