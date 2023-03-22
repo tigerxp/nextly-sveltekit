@@ -8,6 +8,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <script lang="javascript">
+      // Default theme
+      window.themePreference =
+        localStorage.getItem('themePreference') ||
+          (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light');
+        var htmlEl = document.querySelector('html');
+        htmlEl.setAttribute('class', window.themePreference);
+        htmlEl.setAttribute('style', 'color-scheme: ' + window.themePreference + ';');
+    </script>
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">
