@@ -26,7 +26,7 @@
   };
 </script>
 
-<div class="flex items-center">
+<div class="theme-changer flex items-center">
   <button
     on:click={() => switchTheme()}
     class="text-gray-300 rounded-full outline-none focus:outline-none"

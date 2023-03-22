@@ -8,7 +8,10 @@ module.exports = {
     extend: {
       colors: {
         trueGray: colors.trueGray
-      }
+      },
+      screens: {
+        'maxlg': {'max': '1023px'},
+      },
     },
     fontFamily: {
       sans: ['Inter', ...defaultTheme.fontFamily.sans],

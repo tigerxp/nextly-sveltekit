@@ -10,7 +10,45 @@
 }
 
 @layer components {
+
+  /*=============================================
+  =            Navbar            =
+  =============================================*/
+
   .navbar-close {
     @apply hidden;
   }
+
+  @media screen(maxlg) {
+    .navbar-open {
+      .navbar-close {
+        @apply block;
+      }
+      .navbar-hamburger {
+        @apply hidden;
+      }
+      .navbar-items {
+        @apply block w-full text-left;
+
+        a {
+          @apply w-full text-base;
+        }
+      }
+      .navbar-tools {
+        @apply block w-full mt-2;
+
+        a {
+          @apply block w-full;
+        }
+
+        .theme-changer {
+          @apply hidden;
+        }
+      }
+    }
+  }
+
+
+  /*=====  End of Navbar  ======*/
+
 }

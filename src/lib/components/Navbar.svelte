@@ -58,7 +58,7 @@
         {/each}
       </ul>
     </div>
-    <div class="hidden mr-3 space-x-4 lg:flex nav__item">
+    <div class="navbar-tools hidden mr-3 space-x-4 lg:flex nav__item">
       <a class="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5" href="/">Get Started</a>
       <ThemeChanger />
     </div>
