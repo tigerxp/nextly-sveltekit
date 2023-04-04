@@ -52,8 +52,11 @@
           <li class="mr-3 nav__item">
             <a
               class="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
-              href="/">{item}</a
+              href="/"
+              on:click={() => (open = false)}
             >
+              {item}
+            </a>
           </li>
         {/each}
       </ul>
